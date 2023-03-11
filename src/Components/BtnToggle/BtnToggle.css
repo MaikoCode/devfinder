@@ -1,0 +1,13 @@
+.button-theme{
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+button img{
+    margin-left: 10px;
+}
