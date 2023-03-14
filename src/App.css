@@ -21,16 +21,33 @@ body{
 }
 
 
-@media only screen and (max-width: 750px){
-    .App{
-        
-        max-width: 327px;
-       
-    }
+.light-mode .header{
+    color: #222731;
+}
 
+.dark-mode .header{
+    color: #FFFFFF;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 750px){
+    body{
+       padding: 25px;
+    }
+    .App{
+    
+        max-width: 450px;
+       
+    }
+
+}
+
+@media only screen and (max-width: 450px){
+    a{
+        padding-right: 10px;
+    }
 }
