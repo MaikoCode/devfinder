@@ -3,11 +3,13 @@ import React, {createContext, useState} from 'react'
 export const ThemeContext = createContext();
 
 const ThemeContextProvider = props => {
-    const [theme, setTheme] = useState(false)
+    const [theme, setTheme] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches)
 
     const toggleTheme = () =>{
         setTheme(!theme)
     }
+
+   
 
     if(theme){
         document.body.classList.remove('light-mode');

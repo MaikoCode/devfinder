@@ -141,6 +141,12 @@ a:hover{
     opacity: 0.5;
 }
 
+.no-results{
+    color: #F74646;
+    margin-inline: auto;
+}
+
+
 @media only screen and (max-width: 750px){
 
     .content{
@@ -170,5 +176,15 @@ a:hover{
         transform: translateY(0%);
         margin: 25px 0;
 
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .location-container{
+        flex-direction: column;
+    }
+
+    .stats{
+        text-align: center;
     }
 }

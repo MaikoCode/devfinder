@@ -15,13 +15,12 @@ export default function Content() {
       "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
     ];
     const joinedString = `Joined ${createdAt.getDate()} ${monthNames[createdAt.getMonth()]} ${createdAt.getFullYear()}`;
-    // console.log(joinedString); // output: "Joined 21 Sep 2020"
     return joinedString;
   }
 
   return (
     <>
-      {data && 
+      {(data.length !== 0 && !data.message)  && 
         <div className="content">
 
           <div className='profile-container'>
@@ -89,7 +88,7 @@ export default function Content() {
                 </span></p>
               </div>
 
-              
+          
             </div>
           </div>
         </div>

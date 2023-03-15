@@ -2,7 +2,7 @@ form{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-    padding: 15px;
+    padding: 7px;
 
     background: #FEFEFE;
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
@@ -22,10 +22,26 @@ input{
 
 input::placeholder{
     font-family: var(--ff-primary);
-    /* font-size: 1.125rem; */
-    /* padding: 10px; */
-    /* width: 100% ; */
 }
+
+.light-mode form {
+    background-color: #FEFEFE;
+}
+
+.dark-mode form {
+    background-color: #1E2A47;
+    box-shadow: none;
+}
+
+.dark-mode input {
+    
+    color: #FFFFFF;
+}
+
+.dark-mode input::placeholder{
+    color: #FFFFFF;
+}
+
 
 .button-search{
     appearance: none;
@@ -48,5 +64,39 @@ input::placeholder{
 
 .search-container{
     display: flex;
+    flex-grow: 1;
     align-items: center;
+
+}
+
+.no-results{
+    padding: 15px;
+}
+
+@media only screen and (max-width: 450px){
+
+    input::placeholder{
+        font-size: 0.8125rem;
+    }
+
+    .glasses{
+        padding-top: 5px;
+        width: 20px;
+        margin: 0 7px;
+    }
+
+    .button-search{
+        font-size: 0.875rem;
+        padding: 5px;
+        height: 50px;
+        width: 70px;
+       
+    }
+
+    .no-results{
+        font-size: 0.8125rem;
+        padding: 15px 5px 0 0;
+    }
+    
+    
 }
